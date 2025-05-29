@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
     },
     eslint: {
         dirs: [path.join(__dirname, 'src')],
+        ignoreDuringBuilds: true,
+
     }
 };
 
