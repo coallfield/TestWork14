@@ -1,0 +1,45 @@
+.product {
+	cursor: pointer;
+	width: 400px;
+	height: 600px;
+	@include flex-center(column);
+
+	border-radius: 10px;
+	padding: 1rem;
+	box-shadow: $box-shadow;
+
+	.image {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: $gap-items;
+
+		.title {
+			@include bold-text;
+		}
+
+		.category {
+			color: $secondary-color;
+			text-transform: uppercase;
+		}
+
+		.price {
+			@include bold-text;
+		}
+	}
+}
+
+@media (width <= 570px) {
+	.product {
+		width: 250px;
+		height: 400px;
+	}
+}

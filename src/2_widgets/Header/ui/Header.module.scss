@@ -1,0 +1,40 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1rem;
+	height: 80px;
+	background: $foreground;
+	gap: $gap-items;
+
+	.userInfo {
+		display: flex;
+		flex-direction: row;
+		gap: 5px;
+		color: $background;
+	}
+
+	.nav {
+		width: 150px;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+
+		.link {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+@media (width <= 570px) {
+	.header {
+		justify-content: center;
+	}
+
+	.nav {
+		justify-content: center;
+	}
+}

@@ -1,0 +1,10 @@
+.footer {
+	@include flex-center(column);
+
+	gap: $gap-items;
+	color: $background;
+	height: 350px;
+	width: 100%;
+	background: $foreground;
+	text-align: center;
+}

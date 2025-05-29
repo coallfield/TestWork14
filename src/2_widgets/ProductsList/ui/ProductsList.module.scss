@@ -1,0 +1,7 @@
+.productsList {
+	@include flex-center(row);
+
+	gap: $gap-elements;
+	flex-wrap: wrap;
+	padding: 2rem;
+}

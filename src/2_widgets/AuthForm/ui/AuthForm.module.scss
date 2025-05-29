@@ -1,0 +1,8 @@
+.authForm {
+	width: 100%;
+	max-width: 600px;
+	@include flex-center(column);
+
+	gap: $gap-elements;
+	padding: 1rem;
+}

@@ -1,0 +1,19 @@
+$background: #f2f2f2;
+$foreground: #000;
+$primary-color: #eae4d5;
+$secondary-color: #b6b09f;
+$gap-items: 0.5rem;
+$gap-elements: 1.5rem;
+$box-shadow: 2px 5px 10px $secondary-color;
+
+@mixin flex-center($direction) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin bold-text() {
+	font-size: 1.2rem;
+	font-weight: bolder;
+}

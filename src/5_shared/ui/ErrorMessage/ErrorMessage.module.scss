@@ -1,0 +1,6 @@
+.error {
+	color: tomato;
+	@include bold-text;
+
+	text-transform: lowercase;
+}
